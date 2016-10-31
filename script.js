@@ -1,13 +1,14 @@
-var hello = ["Hello there!", "Nice to meet you!", "Hi", "I love you <3", "I am awesome!", "Click me!", "Why you cry?", "Don't worry, be happy :)"]
+var hello = ["Hello there!", "Nice to meet you!", "Hi", "I love you <3", "I am awesome!", "Click me!", "Don't worry, be happy :)"]
 
 $(".bubble").hide();
 
-$("#pusheen").click(doSomething)
+$("#pusheen").click(saySomething)
 
 function doSomething() {
   $(".bubble").html("");
   console.log("clicked");
   $(".bubble").show();
-  $(".bubble").append(hello[Math.floor(Math.random() * 7)])
+  $(".bubble").append(hello[Math.floor(Math.random() * 6)])
 }
+
 
