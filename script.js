@@ -4,11 +4,17 @@ $(".bubble").hide();
 
 $("#pusheen").click(saySomething)
 
-function doSomething() {
+function saySomething() {
   $(".bubble").html("");
   console.log("clicked");
   $(".bubble").show();
   $(".bubble").append(hello[Math.floor(Math.random() * 6)])
 }
 
+$(window).keypress(function(e) {
+  if (e.keyCode == 32) {
+    console.log('Space pressed');
+    $(".bubble").hide();
+  }
+});
 
