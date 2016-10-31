@@ -15,6 +15,7 @@ $(window).keypress(function(e) {
   if (e.keyCode == 32) {
     console.log('Space pressed');
     $(".bubble").hide();
+    $('#background').css("background-image", "url(/myimage.jpg)");  
   }
 });
 
