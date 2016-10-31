@@ -18,7 +18,8 @@ $(window).keypress(function(e) {
     console.log('Space pressed');
     $(".bubble").hide();
       if (e.keyCode == 39) {
-        pusheen.css("right", "100px");
+        pusheen.css("right", "400px");
+        console.log("right");
         
       
       }
