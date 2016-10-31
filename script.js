@@ -1,8 +1,10 @@
 var hello = ["Hello there!", "Nice to meet you!", "Hi", "I love you <3", "I am awesome!", "Click me!", "Don't worry, be happy :)"]
 
+var pusheen = $("#pusheen")
+
 $(".bubble").hide();
 
-$("#pusheen").click(saySomething)
+pusheen.click(saySomething)
 
 function saySomething() {
   $(".bubble").html("");
@@ -16,7 +18,7 @@ $(window).keypress(function(e) {
     console.log('Space pressed');
     $(".bubble").hide();
       if (e.keyCode == 32) {
-      
+        pusheen.css("
         
       
       }
