@@ -15,7 +15,11 @@ $(window).keypress(function(e) {
   if (e.keyCode == 32) {
     console.log('Space pressed');
     $(".bubble").hide();
+      if (e.keyCode == 32) {
       
+        
+      
+      }
   }
 });
 
